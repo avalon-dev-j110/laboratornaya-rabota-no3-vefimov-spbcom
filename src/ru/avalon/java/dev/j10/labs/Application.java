@@ -18,7 +18,7 @@ public class Application {
 		System.out.println("-----------------" + "\n" + "Последовательность Фибоначчи:" + "\n" + s + "\n" + "-----------------");
 		System.out.println("Последовательность Фибоначчи, сумма чисел:" + "\n" + sum(array) + "\n" + "-----------------");
 
-		RandomInitializer.initialize(array);
+		RandomInitializer.initialize(array, -50, 50);
 		String s1 = Arrays.toString(array);
 		System.out.println("Случайная последовательность" + "\n" + s1 + "\n" + "-----------------");
 
@@ -26,7 +26,7 @@ public class Application {
 		String s2 = Arrays.toString(array);
 		System.out.println("Сортировка пузырьком:" + "\n" + s2 + "\n" + "-----------------");
 
-		RandomInitializer.initialize(array);
+		RandomInitializer.initialize(array, -50, 50);
 		String s3 = Arrays.toString(array);
 		System.out.println("Случайная последовательность" + "\n" + s3 + "\n" + "-----------------");
 
@@ -34,7 +34,7 @@ public class Application {
 		String s4 = Arrays.toString(array);
 		System.out.println("Сортировка выбором:" + "\n" + s4 + "\n" + "-----------------");
 
-		RandomInitializer.initialize(array);
+		RandomInitializer.initialize(array, -50, 50);
 		String s5 = Arrays.toString(array);
 		System.out.println("Случайная последовательность" + "\n" + s5 + "\n" + "-----------------");
 
@@ -42,13 +42,13 @@ public class Application {
 		String s6 = Arrays.toString(array);
 		System.out.println("Сортировка Шелла:" + "\n" + s6 + "\n" + "-----------------");
 
-		RandomInitializer r = new RandomInitializer(new int[20]);
+		RandomInitializer r = new RandomInitializer(new int[20], -15, -5);
 		String s7 = Arrays.toString(r.getArray());
-		System.out.println("Инициализация через экземпляр:" + "\n" + s7 + "\n" + "-----------------");
+		System.out.println("Инициализация через экземпляр Random:" + "\n" + s7 + "\n" + "-----------------");
 
 		FibonacciInitializer f = new FibonacciInitializer (new int[20]);
 		String s8 = Arrays.toString(f.getArray());
-		System.out.println("Инициализация через экземпляр:" + "\n" + s8 + "\n" + "-----------------");
+		System.out.println("Инициализация через экземпляр Fibonacci:" + "\n" + s8 + "\n" + "-----------------");
 
 	}
 
