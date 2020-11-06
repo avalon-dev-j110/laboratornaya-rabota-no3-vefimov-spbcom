@@ -41,6 +41,15 @@ public class Application {
 		ShellSort.sort(array);
 		String s6 = Arrays.toString(array);
 		System.out.println("Сортировка Шелла:" + "\n" + s6 + "\n" + "-----------------");
+
+		RandomInitializer r = new RandomInitializer(new int[20]);
+		String s7 = Arrays.toString(r.getArray());
+		System.out.println("Инициализация через экземпляр:" + "\n" + s7 + "\n" + "-----------------");
+
+		FibonacciInitializer f = new FibonacciInitializer (new int[20]);
+		String s8 = Arrays.toString(f.getArray());
+		System.out.println("Инициализация через экземпляр:" + "\n" + s8 + "\n" + "-----------------");
+
 	}
 
 	public static int sum (int[] array){

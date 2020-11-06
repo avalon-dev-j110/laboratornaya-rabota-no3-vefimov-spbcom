@@ -3,6 +3,11 @@ package ru.avalon.java.dev.j10.labs.initialization;
 import ru.avalon.java.dev.j10.labs.Initializer;
 
 public class FibonacciInitializer implements Initializer {
+    private int[] array;
+    public FibonacciInitializer(int[] array){
+        initialize(array);
+        this.array = array;
+    }
     public static void initialize(int[] array) {
         int[] a = array;
         a[0] = 0;
@@ -10,6 +15,10 @@ public class FibonacciInitializer implements Initializer {
         for(int i = 2; i < a.length; i++){
             a[i] = a[i-1] + a [i - 2];
         }
+    }
+
+    public int[] getArray() {
+        return array;
     }
 }
 /**
